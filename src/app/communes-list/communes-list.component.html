@@ -1,0 +1,7 @@
+<div *ngFor="let commune of communes" [ngStyle]="{'color': getColor(commune.Province), 'font-size': getFontSize(commune.Population) + 'px'}">
+    <h2>{{ commune.Nom }}</h2>
+    <p>Superficie: {{ commune.Superficie }} km²</p>
+    <p>Province: {{ commune.Province }}</p>
+    <p>Population: {{ commune.Population }}</p>
+    <p>Code Postal: {{ commune.CodePostal }}</p>
+</div>  
